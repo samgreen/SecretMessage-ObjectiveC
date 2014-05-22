@@ -30,6 +30,12 @@
 		77007504192DEC5E00CF2F01 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77007503192DEC5E00CF2F01 /* Security.framework */; };
 		77007507192DEC7C00CF2F01 /* SMSecretMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 77007506192DEC7C00CF2F01 /* SMSecretMessage.m */; };
 		7700750B192DF9BD00CF2F01 /* SMCommitMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7700750A192DF9BD00CF2F01 /* SMCommitMessage.m */; };
+		7700750E192E0B2600CF2F01 /* SMKeyMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7700750D192E0B2600CF2F01 /* SMKeyMessage.m */; };
+		77007511192E0D1B00CF2F01 /* SMRevealSignatureMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 77007510192E0D1B00CF2F01 /* SMRevealSignatureMessage.m */; };
+		77007514192E12AC00CF2F01 /* SMSignatureMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 77007513192E12AC00CF2F01 /* SMSignatureMessage.m */; };
+		77007517192E12C300CF2F01 /* SMDataMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 77007516192E12C300CF2F01 /* SMDataMessage.m */; };
+		7700751A192E139900CF2F01 /* SMQueryMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 77007519192E139900CF2F01 /* SMQueryMessage.m */; };
+		7700751D192E13A600CF2F01 /* SMErrorMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7700751C192E13A600CF2F01 /* SMErrorMessage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +101,18 @@
 		77007506192DEC7C00CF2F01 /* SMSecretMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSecretMessage.m; sourceTree = "<group>"; };
 		77007509192DF9BD00CF2F01 /* SMCommitMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCommitMessage.h; sourceTree = "<group>"; };
 		7700750A192DF9BD00CF2F01 /* SMCommitMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCommitMessage.m; sourceTree = "<group>"; };
+		7700750C192E0B2600CF2F01 /* SMKeyMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMKeyMessage.h; sourceTree = "<group>"; };
+		7700750D192E0B2600CF2F01 /* SMKeyMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMKeyMessage.m; sourceTree = "<group>"; };
+		7700750F192E0D1B00CF2F01 /* SMRevealSignatureMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRevealSignatureMessage.h; sourceTree = "<group>"; };
+		77007510192E0D1B00CF2F01 /* SMRevealSignatureMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRevealSignatureMessage.m; sourceTree = "<group>"; };
+		77007512192E12AC00CF2F01 /* SMSignatureMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSignatureMessage.h; sourceTree = "<group>"; };
+		77007513192E12AC00CF2F01 /* SMSignatureMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSignatureMessage.m; sourceTree = "<group>"; };
+		77007515192E12C300CF2F01 /* SMDataMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMDataMessage.h; sourceTree = "<group>"; };
+		77007516192E12C300CF2F01 /* SMDataMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMDataMessage.m; sourceTree = "<group>"; };
+		77007518192E139900CF2F01 /* SMQueryMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMQueryMessage.h; sourceTree = "<group>"; };
+		77007519192E139900CF2F01 /* SMQueryMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMQueryMessage.m; sourceTree = "<group>"; };
+		7700751B192E13A600CF2F01 /* SMErrorMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMErrorMessage.h; sourceTree = "<group>"; };
+		7700751C192E13A600CF2F01 /* SMErrorMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMErrorMessage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +278,18 @@
 				770074E7192DB21B00CF2F01 /* SMMessage.m */,
 				77007509192DF9BD00CF2F01 /* SMCommitMessage.h */,
 				7700750A192DF9BD00CF2F01 /* SMCommitMessage.m */,
+				7700750C192E0B2600CF2F01 /* SMKeyMessage.h */,
+				7700750D192E0B2600CF2F01 /* SMKeyMessage.m */,
+				7700750F192E0D1B00CF2F01 /* SMRevealSignatureMessage.h */,
+				77007510192E0D1B00CF2F01 /* SMRevealSignatureMessage.m */,
+				77007512192E12AC00CF2F01 /* SMSignatureMessage.h */,
+				77007513192E12AC00CF2F01 /* SMSignatureMessage.m */,
+				77007515192E12C300CF2F01 /* SMDataMessage.h */,
+				77007516192E12C300CF2F01 /* SMDataMessage.m */,
+				77007518192E139900CF2F01 /* SMQueryMessage.h */,
+				77007519192E139900CF2F01 /* SMQueryMessage.m */,
+				7700751B192E13A600CF2F01 /* SMErrorMessage.h */,
+				7700751C192E13A600CF2F01 /* SMErrorMessage.m */,
 			);
 			name = Messages;
 			sourceTree = "<group>";
@@ -350,13 +380,19 @@
 				7700750B192DF9BD00CF2F01 /* SMCommitMessage.m in Sources */,
 				770074FC192DBEF000CF2F01 /* SMDiffieHellman.m in Sources */,
 				770074F1192DB2DC00CF2F01 /* SMContext.m in Sources */,
+				7700750E192E0B2600CF2F01 /* SMKeyMessage.m in Sources */,
 				77007507192DEC7C00CF2F01 /* SMSecretMessage.m in Sources */,
 				770074EB192DB2AF00CF2F01 /* SMUserState.m in Sources */,
 				770074BC192D96E200CF2F01 /* SecretMessage.m in Sources */,
+				77007517192E12C300CF2F01 /* SMDataMessage.m in Sources */,
 				770074F7192DB38F00CF2F01 /* SMAuthInfo.m in Sources */,
+				77007514192E12AC00CF2F01 /* SMSignatureMessage.m in Sources */,
+				7700751A192E139900CF2F01 /* SMQueryMessage.m in Sources */,
 				77007500192DC4DF00CF2F01 /* NSString+SubstringHelpers.m in Sources */,
 				770074E5192DB20E00CF2F01 /* SMPrivateKey.m in Sources */,
 				770074E8192DB21B00CF2F01 /* SMMessage.m in Sources */,
+				7700751D192E13A600CF2F01 /* SMErrorMessage.m in Sources */,
+				77007511192E0D1B00CF2F01 /* SMRevealSignatureMessage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

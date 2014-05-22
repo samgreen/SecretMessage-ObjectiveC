@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SMMessage.h"
 
-@interface SMCommitMessage : NSObject
+@interface SMCommitMessage : SMMessage
+
+@property (nonatomic, readonly) NSData *encryptedData;
+@property (nonatomic, readonly) NSData *hashedData;
 
 @end

@@ -8,24 +8,33 @@
 
 #import <Foundation/Foundation.h>
 
-typedef NS_ENUM(NSInteger, SMMessageType) {
-    SMMessageTypeNotOTR,
+// Should be a byte (8 bit int)
+typedef NS_ENUM(int8_t, SMMessageType) {
+    SMMessageTypeNotOTR = 0x01,
+    SMMessageTypeCommit = 0x02,
     SMMessageTypeTaggedPlainText,
     SMMessageTypeQuery,
-    SMMessageTypeDHCommit,
-    SMMessageTypeDHKey,
-    SMMessageTypeRevealSignature,
-    SMMessageTypeSignature,
+    SMMessageTypeKey = 0x0a,
+    SMMessageTypeRevealSignature = 0x11,
+    SMMessageTypeSignature = 0x12,
     SMMessageTypeV1KeyExchange,
-    SMMessageTypeData,
+    SMMessageTypeData = 0x03,
     SMMessageTypeError,
     SMMessageTypeUnknown
 };
 
+typedef NS_ENUM(int16_t, SMProtocolVersion) {
+    SMProtocolVersion1 = 0x001,
+    SMProtocolVersion2,
+    SMProtocolVersion3,
+};
+
 @interface SMMessage : NSObject
 
-@property (nonatomic, readonly) short version;
-@property (nonatomic) SMMessageType type;
++ (instancetype)message;
++ (SMMessageType)type;
+
+@property (nonatomic, readonly) SMProtocolVersion version;
 
 @property (nonatomic) NSInteger senderInstance;
 @property (nonatomic) NSInteger receiverInstance;

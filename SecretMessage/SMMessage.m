@@ -10,23 +10,31 @@
 
 @interface SMMessage ()
 
-@property (nonatomic) short version;
+@property (nonatomic) SMProtocolVersion version;
 
 @end
 
 @implementation SMMessage
 
 + (instancetype)message {
-    return [[self alloc] init];
+    return [[self alloc] initWithType:[self.class type]];
 }
 
-- (instancetype)init {
++ (SMMessageType)type {
+    return SMMessageTypeUnknown;
+}
+
+- (instancetype)initWithType:(SMMessageType)type {
     self = [super init];
     if (self) {
-        // Defaulting to version 3
-        self.version = 0x003;
+
     }
     return self;
+}
+
+- (SMProtocolVersion)version {
+    // Defaulting to version 3
+    return SMProtocolVersion3;
 }
 
 @end

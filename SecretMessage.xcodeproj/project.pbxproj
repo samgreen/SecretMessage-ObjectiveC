@@ -53,6 +53,9 @@
 		770074CC192D96E200CF2F01 /* SecretMessageTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SecretMessageTests-Info.plist"; sourceTree = "<group>"; };
 		770074CE192D96E200CF2F01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		770074D0192D96E200CF2F01 /* SecretMessageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecretMessageTests.m; sourceTree = "<group>"; };
+		770074DC192D976200CF2F01 /* libgcrypt-1.5.3 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "libgcrypt-1.5.3"; sourceTree = "<group>"; };
+		770074DD192D977400CF2F01 /* libgpg-error-1.12 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "libgpg-error-1.12"; sourceTree = "<group>"; };
+		770074DE192D977400CF2F01 /* libotr-4.0.0 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "libotr-4.0.0"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,9 @@
 		770074A8192D96E200CF2F01 = {
 			isa = PBXGroup;
 			children = (
+				770074DD192D977400CF2F01 /* libgpg-error-1.12 */,
+				770074DE192D977400CF2F01 /* libotr-4.0.0 */,
+				770074DC192D976200CF2F01 /* libgcrypt-1.5.3 */,
 				770074B6192D96E200CF2F01 /* SecretMessage */,
 				770074CA192D96E200CF2F01 /* SecretMessageTests */,
 				770074B3192D96E200CF2F01 /* Frameworks */,

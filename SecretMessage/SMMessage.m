@@ -27,14 +27,10 @@
 - (instancetype)initWithType:(SMMessageType)type {
     self = [super init];
     if (self) {
-
+        // Default to latest, v3
+        self.version = SMProtocolVersion3;
     }
     return self;
-}
-
-- (SMProtocolVersion)version {
-    // Defaulting to version 3
-    return SMProtocolVersion3;
 }
 
 @end

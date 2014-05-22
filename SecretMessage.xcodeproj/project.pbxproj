@@ -23,10 +23,8 @@
 		770074F1192DB2DC00CF2F01 /* SMContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 770074F0192DB2DC00CF2F01 /* SMContext.m */; };
 		770074F4192DB2E400CF2F01 /* SMAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 770074F3192DB2E400CF2F01 /* SMAuth.m */; };
 		770074F7192DB38F00CF2F01 /* SMAuthInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 770074F6192DB38F00CF2F01 /* SMAuthInfo.m */; };
-		770074F9192DBD9C00CF2F01 /* libcommonCrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 770074F8192DBD9C00CF2F01 /* libcommonCrypto.dylib */; };
 		770074FC192DBEF000CF2F01 /* SMDiffieHellman.m in Sources */ = {isa = PBXBuildFile; fileRef = 770074FB192DBEF000CF2F01 /* SMDiffieHellman.m */; };
 		77007500192DC4DF00CF2F01 /* NSString+SubstringHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 770074FF192DC4DF00CF2F01 /* NSString+SubstringHelpers.m */; };
-		77007502192DEC2400CF2F01 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77007501192DEC2400CF2F01 /* CFNetwork.framework */; };
 		77007504192DEC5E00CF2F01 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77007503192DEC5E00CF2F01 /* Security.framework */; };
 		77007507192DEC7C00CF2F01 /* SMSecretMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 77007506192DEC7C00CF2F01 /* SMSecretMessage.m */; };
 		7700750B192DF9BD00CF2F01 /* SMCommitMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7700750A192DF9BD00CF2F01 /* SMCommitMessage.m */; };
@@ -37,6 +35,41 @@
 		7700751A192E139900CF2F01 /* SMQueryMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 77007519192E139900CF2F01 /* SMQueryMessage.m */; };
 		7700751D192E13A600CF2F01 /* SMErrorMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7700751C192E13A600CF2F01 /* SMErrorMessage.m */; };
 		7700751F192E21BC00CF2F01 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7700751E192E21BC00CF2F01 /* README.md */; };
+		77007566192E2B4700CF2F01 /* NSString+SubstringHelpers.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 770074FE192DC4DF00CF2F01 /* NSString+SubstringHelpers.h */; };
+		77007567192E2B4700CF2F01 /* NSString+SubstringHelpers.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 770074FF192DC4DF00CF2F01 /* NSString+SubstringHelpers.m */; };
+		77007568192E2B4700CF2F01 /* SMMessage.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 770074E6192DB21B00CF2F01 /* SMMessage.h */; };
+		77007569192E2B4700CF2F01 /* SMMessage.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 770074E7192DB21B00CF2F01 /* SMMessage.m */; };
+		7700756A192E2B4700CF2F01 /* SMCommitMessage.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 77007509192DF9BD00CF2F01 /* SMCommitMessage.h */; };
+		7700756B192E2B4700CF2F01 /* SMCommitMessage.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7700750A192DF9BD00CF2F01 /* SMCommitMessage.m */; };
+		7700756C192E2B4700CF2F01 /* SMKeyMessage.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7700750C192E0B2600CF2F01 /* SMKeyMessage.h */; };
+		7700756D192E2B4700CF2F01 /* SMKeyMessage.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7700750D192E0B2600CF2F01 /* SMKeyMessage.m */; };
+		7700756E192E2B4700CF2F01 /* SMRevealSignatureMessage.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7700750F192E0D1B00CF2F01 /* SMRevealSignatureMessage.h */; };
+		7700756F192E2B4700CF2F01 /* SMRevealSignatureMessage.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 77007510192E0D1B00CF2F01 /* SMRevealSignatureMessage.m */; };
+		77007570192E2B4700CF2F01 /* SMSignatureMessage.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 77007512192E12AC00CF2F01 /* SMSignatureMessage.h */; };
+		77007571192E2B4700CF2F01 /* SMSignatureMessage.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 77007513192E12AC00CF2F01 /* SMSignatureMessage.m */; };
+		77007572192E2B4700CF2F01 /* SMDataMessage.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 77007515192E12C300CF2F01 /* SMDataMessage.h */; };
+		77007573192E2B4700CF2F01 /* SMDataMessage.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 77007516192E12C300CF2F01 /* SMDataMessage.m */; };
+		77007574192E2B4700CF2F01 /* SMQueryMessage.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 77007518192E139900CF2F01 /* SMQueryMessage.h */; };
+		77007575192E2B4700CF2F01 /* SMQueryMessage.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 77007519192E139900CF2F01 /* SMQueryMessage.m */; };
+		77007576192E2B4700CF2F01 /* SMErrorMessage.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7700751B192E13A600CF2F01 /* SMErrorMessage.h */; };
+		77007577192E2B4700CF2F01 /* SMErrorMessage.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7700751C192E13A600CF2F01 /* SMErrorMessage.m */; };
+		77007578192E2B4700CF2F01 /* SMPrivateKey.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 770074E3192DB20E00CF2F01 /* SMPrivateKey.h */; };
+		77007579192E2B4700CF2F01 /* SMPrivateKey.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 770074E4192DB20E00CF2F01 /* SMPrivateKey.m */; };
+		7700757A192E2B4700CF2F01 /* SMUserState.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 770074E9192DB2AF00CF2F01 /* SMUserState.h */; };
+		7700757B192E2B4700CF2F01 /* SMUserState.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 770074EA192DB2AF00CF2F01 /* SMUserState.m */; };
+		7700757C192E2B4700CF2F01 /* SMProtocol.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 770074EC192DB2CA00CF2F01 /* SMProtocol.h */; };
+		7700757D192E2B4700CF2F01 /* SMProtocol.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 770074ED192DB2CA00CF2F01 /* SMProtocol.m */; };
+		7700757E192E2B4700CF2F01 /* SMContext.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 770074EF192DB2DC00CF2F01 /* SMContext.h */; };
+		7700757F192E2B4700CF2F01 /* SMContext.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 770074F0192DB2DC00CF2F01 /* SMContext.m */; };
+		77007580192E2B4700CF2F01 /* SMAuth.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 770074F2192DB2E400CF2F01 /* SMAuth.h */; };
+		77007581192E2B4700CF2F01 /* SMAuth.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 770074F3192DB2E400CF2F01 /* SMAuth.m */; };
+		77007582192E2B4700CF2F01 /* SMAuthInfo.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 770074F5192DB38F00CF2F01 /* SMAuthInfo.h */; };
+		77007583192E2B4700CF2F01 /* SMAuthInfo.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 770074F6192DB38F00CF2F01 /* SMAuthInfo.m */; };
+		77007584192E2B4700CF2F01 /* SMDiffieHellman.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 770074FA192DBEF000CF2F01 /* SMDiffieHellman.h */; };
+		77007585192E2B4700CF2F01 /* SMDiffieHellman.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 770074FB192DBEF000CF2F01 /* SMDiffieHellman.m */; };
+		77007586192E2B4700CF2F01 /* SMSecretMessage.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 77007505192DEC7C00CF2F01 /* SMSecretMessage.h */; };
+		77007587192E2B4700CF2F01 /* SMSecretMessage.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 77007506192DEC7C00CF2F01 /* SMSecretMessage.m */; };
+		7700758B192E2D8C00CF2F01 /* libBigInteger-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77007589192E2D8C00CF2F01 /* libBigInteger-iOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +89,40 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				77007566192E2B4700CF2F01 /* NSString+SubstringHelpers.h in CopyFiles */,
+				77007567192E2B4700CF2F01 /* NSString+SubstringHelpers.m in CopyFiles */,
+				77007568192E2B4700CF2F01 /* SMMessage.h in CopyFiles */,
+				77007569192E2B4700CF2F01 /* SMMessage.m in CopyFiles */,
+				7700756A192E2B4700CF2F01 /* SMCommitMessage.h in CopyFiles */,
+				7700756B192E2B4700CF2F01 /* SMCommitMessage.m in CopyFiles */,
+				7700756C192E2B4700CF2F01 /* SMKeyMessage.h in CopyFiles */,
+				7700756D192E2B4700CF2F01 /* SMKeyMessage.m in CopyFiles */,
+				7700756E192E2B4700CF2F01 /* SMRevealSignatureMessage.h in CopyFiles */,
+				7700756F192E2B4700CF2F01 /* SMRevealSignatureMessage.m in CopyFiles */,
+				77007570192E2B4700CF2F01 /* SMSignatureMessage.h in CopyFiles */,
+				77007571192E2B4700CF2F01 /* SMSignatureMessage.m in CopyFiles */,
+				77007572192E2B4700CF2F01 /* SMDataMessage.h in CopyFiles */,
+				77007573192E2B4700CF2F01 /* SMDataMessage.m in CopyFiles */,
+				77007574192E2B4700CF2F01 /* SMQueryMessage.h in CopyFiles */,
+				77007575192E2B4700CF2F01 /* SMQueryMessage.m in CopyFiles */,
+				77007576192E2B4700CF2F01 /* SMErrorMessage.h in CopyFiles */,
+				77007577192E2B4700CF2F01 /* SMErrorMessage.m in CopyFiles */,
+				77007578192E2B4700CF2F01 /* SMPrivateKey.h in CopyFiles */,
+				77007579192E2B4700CF2F01 /* SMPrivateKey.m in CopyFiles */,
+				7700757A192E2B4700CF2F01 /* SMUserState.h in CopyFiles */,
+				7700757B192E2B4700CF2F01 /* SMUserState.m in CopyFiles */,
+				7700757C192E2B4700CF2F01 /* SMProtocol.h in CopyFiles */,
+				7700757D192E2B4700CF2F01 /* SMProtocol.m in CopyFiles */,
+				7700757E192E2B4700CF2F01 /* SMContext.h in CopyFiles */,
+				7700757F192E2B4700CF2F01 /* SMContext.m in CopyFiles */,
+				77007580192E2B4700CF2F01 /* SMAuth.h in CopyFiles */,
+				77007581192E2B4700CF2F01 /* SMAuth.m in CopyFiles */,
+				77007582192E2B4700CF2F01 /* SMAuthInfo.h in CopyFiles */,
+				77007583192E2B4700CF2F01 /* SMAuthInfo.m in CopyFiles */,
+				77007584192E2B4700CF2F01 /* SMDiffieHellman.h in CopyFiles */,
+				77007585192E2B4700CF2F01 /* SMDiffieHellman.m in CopyFiles */,
+				77007586192E2B4700CF2F01 /* SMSecretMessage.h in CopyFiles */,
+				77007587192E2B4700CF2F01 /* SMSecretMessage.m in CopyFiles */,
 				770074BA192D96E200CF2F01 /* SecretMessage.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -115,6 +182,9 @@
 		7700751B192E13A600CF2F01 /* SMErrorMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMErrorMessage.h; sourceTree = "<group>"; };
 		7700751C192E13A600CF2F01 /* SMErrorMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMErrorMessage.m; sourceTree = "<group>"; };
 		7700751E192E21BC00CF2F01 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
+		77007588192E2D7F00CF2F01 /* BigInteger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigInteger.h; sourceTree = "<group>"; };
+		77007589192E2D8C00CF2F01 /* libBigInteger-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libBigInteger-iOS.a"; sourceTree = "<group>"; };
+		7700758A192E2D8C00CF2F01 /* libBigInteger-MacOSX.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libBigInteger-MacOSX.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,9 +193,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				77007504192DEC5E00CF2F01 /* Security.framework in Frameworks */,
-				77007502192DEC2400CF2F01 /* CFNetwork.framework in Frameworks */,
-				770074F9192DBD9C00CF2F01 /* libcommonCrypto.dylib in Frameworks */,
 				770074B5192D96E200CF2F01 /* Foundation.framework in Frameworks */,
+				7700758B192E2D8C00CF2F01 /* libBigInteger-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +237,7 @@
 		770074B3192D96E200CF2F01 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7700758D192E2D9C00CF2F01 /* External */,
 				77007503192DEC5E00CF2F01 /* Security.framework */,
 				77007501192DEC2400CF2F01 /* CFNetwork.framework */,
 				770074F8192DBD9C00CF2F01 /* libcommonCrypto.dylib */,
@@ -182,9 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				770074FD192DC4CA00CF2F01 /* Categories */,
-				770074E1192DB14B00CF2F01 /* gcrypt */,
-				770074E0192DB14600CF2F01 /* gpg */,
-				770074DF192DB13F00CF2F01 /* otr */,
+				770074DF192DB13F00CF2F01 /* Models */,
 				770074B9192D96E200CF2F01 /* SecretMessage.h */,
 				770074BB192D96E200CF2F01 /* SecretMessage.m */,
 				770074B7192D96E200CF2F01 /* Supporting Files */,
@@ -219,7 +287,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		770074DF192DB13F00CF2F01 /* otr */ = {
+		770074DF192DB13F00CF2F01 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				77007508192DF9A400CF2F01 /* Messages */,
@@ -241,21 +309,7 @@
 				77007505192DEC7C00CF2F01 /* SMSecretMessage.h */,
 				77007506192DEC7C00CF2F01 /* SMSecretMessage.m */,
 			);
-			name = otr;
-			sourceTree = "<group>";
-		};
-		770074E0192DB14600CF2F01 /* gpg */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = gpg;
-			sourceTree = "<group>";
-		};
-		770074E1192DB14B00CF2F01 /* gcrypt */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = gcrypt;
+			name = Models;
 			sourceTree = "<group>";
 		};
 		770074E2192DB1D200CF2F01 /* toolkit */ = {
@@ -295,6 +349,24 @@
 				7700751C192E13A600CF2F01 /* SMErrorMessage.m */,
 			);
 			name = Messages;
+			sourceTree = "<group>";
+		};
+		7700758D192E2D9C00CF2F01 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				7700758E192E2DA800CF2F01 /* BigInteger */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		7700758E192E2DA800CF2F01 /* BigInteger */ = {
+			isa = PBXGroup;
+			children = (
+				77007588192E2D7F00CF2F01 /* BigInteger.h */,
+				77007589192E2D8C00CF2F01 /* libBigInteger-iOS.a */,
+				7700758A192E2D8C00CF2F01 /* libBigInteger-MacOSX.a */,
+			);
+			name = BigInteger;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -507,6 +579,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",
+					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -523,6 +596,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",
+					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -585,6 +659,7 @@
 				770074D6192D96E200CF2F01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		770074D7192D96E200CF2F01 /* Build configuration list for PBXNativeTarget "SecretMessageTests" */ = {
 			isa = XCConfigurationList;
@@ -593,6 +668,7 @@
 				770074D9192D96E200CF2F01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

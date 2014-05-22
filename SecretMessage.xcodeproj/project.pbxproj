@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		770074B5192D96E200CF2F01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 770074B4192D96E200CF2F01 /* Foundation.framework */; };
+		770074BA192D96E200CF2F01 /* SecretMessage.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 770074B9192D96E200CF2F01 /* SecretMessage.h */; };
+		770074BC192D96E200CF2F01 /* SecretMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 770074BB192D96E200CF2F01 /* SecretMessage.m */; };
+		770074C3192D96E200CF2F01 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 770074C2192D96E200CF2F01 /* XCTest.framework */; };
+		770074C4192D96E200CF2F01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 770074B4192D96E200CF2F01 /* Foundation.framework */; };
+		770074C6192D96E200CF2F01 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 770074C5192D96E200CF2F01 /* UIKit.framework */; };
+		770074C9192D96E200CF2F01 /* libSecretMessage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 770074B1192D96E200CF2F01 /* libSecretMessage.a */; };
+		770074CF192D96E200CF2F01 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 770074CD192D96E200CF2F01 /* InfoPlist.strings */; };
+		770074D1192D96E200CF2F01 /* SecretMessageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 770074D0192D96E200CF2F01 /* SecretMessageTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		770074C7192D96E200CF2F01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 770074A9192D96E200CF2F01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 770074B0192D96E200CF2F01;
+			remoteInfo = SecretMessage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		770074AF192D96E200CF2F01 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				770074BA192D96E200CF2F01 /* SecretMessage.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		770074B1192D96E200CF2F01 /* libSecretMessage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSecretMessage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		770074B4192D96E200CF2F01 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		770074B8192D96E200CF2F01 /* SecretMessage-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SecretMessage-Prefix.pch"; sourceTree = "<group>"; };
+		770074B9192D96E200CF2F01 /* SecretMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecretMessage.h; sourceTree = "<group>"; };
+		770074BB192D96E200CF2F01 /* SecretMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecretMessage.m; sourceTree = "<group>"; };
+		770074C1192D96E200CF2F01 /* SecretMessageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecretMessageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		770074C2192D96E200CF2F01 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		770074C5192D96E200CF2F01 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		770074CC192D96E200CF2F01 /* SecretMessageTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SecretMessageTests-Info.plist"; sourceTree = "<group>"; };
+		770074CE192D96E200CF2F01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		770074D0192D96E200CF2F01 /* SecretMessageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecretMessageTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		770074AE192D96E200CF2F01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				770074B5192D96E200CF2F01 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		770074BE192D96E200CF2F01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				770074C3192D96E200CF2F01 /* XCTest.framework in Frameworks */,
+				770074C6192D96E200CF2F01 /* UIKit.framework in Frameworks */,
+				770074C4192D96E200CF2F01 /* Foundation.framework in Frameworks */,
+				770074C9192D96E200CF2F01 /* libSecretMessage.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		770074A8192D96E200CF2F01 = {
+			isa = PBXGroup;
+			children = (
+				770074B6192D96E200CF2F01 /* SecretMessage */,
+				770074CA192D96E200CF2F01 /* SecretMessageTests */,
+				770074B3192D96E200CF2F01 /* Frameworks */,
+				770074B2192D96E200CF2F01 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		770074B2192D96E200CF2F01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				770074B1192D96E200CF2F01 /* libSecretMessage.a */,
+				770074C1192D96E200CF2F01 /* SecretMessageTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		770074B3192D96E200CF2F01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				770074B4192D96E200CF2F01 /* Foundation.framework */,
+				770074C2192D96E200CF2F01 /* XCTest.framework */,
+				770074C5192D96E200CF2F01 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		770074B6192D96E200CF2F01 /* SecretMessage */ = {
+			isa = PBXGroup;
+			children = (
+				770074B9192D96E200CF2F01 /* SecretMessage.h */,
+				770074BB192D96E200CF2F01 /* SecretMessage.m */,
+				770074B7192D96E200CF2F01 /* Supporting Files */,
+			);
+			path = SecretMessage;
+			sourceTree = "<group>";
+		};
+		770074B7192D96E200CF2F01 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				770074B8192D96E200CF2F01 /* SecretMessage-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		770074CA192D96E200CF2F01 /* SecretMessageTests */ = {
+			isa = PBXGroup;
+			children = (
+				770074D0192D96E200CF2F01 /* SecretMessageTests.m */,
+				770074CB192D96E200CF2F01 /* Supporting Files */,
+			);
+			path = SecretMessageTests;
+			sourceTree = "<group>";
+		};
+		770074CB192D96E200CF2F01 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				770074CC192D96E200CF2F01 /* SecretMessageTests-Info.plist */,
+				770074CD192D96E200CF2F01 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		770074B0192D96E200CF2F01 /* SecretMessage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 770074D4192D96E200CF2F01 /* Build configuration list for PBXNativeTarget "SecretMessage" */;
+			buildPhases = (
+				770074AD192D96E200CF2F01 /* Sources */,
+				770074AE192D96E200CF2F01 /* Frameworks */,
+				770074AF192D96E200CF2F01 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SecretMessage;
+			productName = SecretMessage;
+			productReference = 770074B1192D96E200CF2F01 /* libSecretMessage.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		770074C0192D96E200CF2F01 /* SecretMessageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 770074D7192D96E200CF2F01 /* Build configuration list for PBXNativeTarget "SecretMessageTests" */;
+			buildPhases = (
+				770074BD192D96E200CF2F01 /* Sources */,
+				770074BE192D96E200CF2F01 /* Frameworks */,
+				770074BF192D96E200CF2F01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				770074C8192D96E200CF2F01 /* PBXTargetDependency */,
+			);
+			name = SecretMessageTests;
+			productName = SecretMessageTests;
+			productReference = 770074C1192D96E200CF2F01 /* SecretMessageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		770074A9192D96E200CF2F01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Detonation Games";
+			};
+			buildConfigurationList = 770074AC192D96E200CF2F01 /* Build configuration list for PBXProject "SecretMessage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 770074A8192D96E200CF2F01;
+			productRefGroup = 770074B2192D96E200CF2F01 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				770074B0192D96E200CF2F01 /* SecretMessage */,
+				770074C0192D96E200CF2F01 /* SecretMessageTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		770074BF192D96E200CF2F01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				770074CF192D96E200CF2F01 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		770074AD192D96E200CF2F01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				770074BC192D96E200CF2F01 /* SecretMessage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		770074BD192D96E200CF2F01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				770074D1192D96E200CF2F01 /* SecretMessageTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		770074C8192D96E200CF2F01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 770074B0192D96E200CF2F01 /* SecretMessage */;
+			targetProxy = 770074C7192D96E200CF2F01 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		770074CD192D96E200CF2F01 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				770074CE192D96E200CF2F01 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		770074D2192D96E200CF2F01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		770074D3192D96E200CF2F01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		770074D5192D96E200CF2F01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SecretMessage.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SecretMessage/SecretMessage-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		770074D6192D96E200CF2F01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SecretMessage.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SecretMessage/SecretMessage-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		770074D8192D96E200CF2F01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SecretMessage/SecretMessage-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SecretMessageTests/SecretMessageTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		770074D9192D96E200CF2F01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SecretMessage/SecretMessage-Prefix.pch";
+				INFOPLIST_FILE = "SecretMessageTests/SecretMessageTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		770074AC192D96E200CF2F01 /* Build configuration list for PBXProject "SecretMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				770074D2192D96E200CF2F01 /* Debug */,
+				770074D3192D96E200CF2F01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		770074D4192D96E200CF2F01 /* Build configuration list for PBXNativeTarget "SecretMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				770074D5192D96E200CF2F01 /* Debug */,
+				770074D6192D96E200CF2F01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		770074D7192D96E200CF2F01 /* Build configuration list for PBXNativeTarget "SecretMessageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				770074D8192D96E200CF2F01 /* Debug */,
+				770074D9192D96E200CF2F01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 770074A9192D96E200CF2F01 /* Project object */;
+}

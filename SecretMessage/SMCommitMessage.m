@@ -10,7 +10,7 @@
 #import <Security/Security.h>
 #import <CommonCrypto/CommonCrypto.h>
 
-#define SM_R_LENGTH_BYTES   32
+#define SM_R_LENGTH_BYTES   kCCKeySizeAES128
 #define SM_X_LENGTH_BYTES   40
 
 @interface SMCommitMessage ()

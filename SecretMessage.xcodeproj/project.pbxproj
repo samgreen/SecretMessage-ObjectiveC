@@ -36,6 +36,7 @@
 		77007517192E12C300CF2F01 /* SMDataMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 77007516192E12C300CF2F01 /* SMDataMessage.m */; };
 		7700751A192E139900CF2F01 /* SMQueryMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 77007519192E139900CF2F01 /* SMQueryMessage.m */; };
 		7700751D192E13A600CF2F01 /* SMErrorMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7700751C192E13A600CF2F01 /* SMErrorMessage.m */; };
+		7700751F192E21BC00CF2F01 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7700751E192E21BC00CF2F01 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 		77007519192E139900CF2F01 /* SMQueryMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMQueryMessage.m; sourceTree = "<group>"; };
 		7700751B192E13A600CF2F01 /* SMErrorMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMErrorMessage.h; sourceTree = "<group>"; };
 		7700751C192E13A600CF2F01 /* SMErrorMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMErrorMessage.m; sourceTree = "<group>"; };
+		7700751E192E21BC00CF2F01 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,7 @@
 		770074B7192D96E200CF2F01 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7700751E192E21BC00CF2F01 /* README.md */,
 				770074B8192D96E200CF2F01 /* SecretMessage-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -364,6 +367,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7700751F192E21BC00CF2F01 /* README.md in Resources */,
 				770074CF192D96E200CF2F01 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

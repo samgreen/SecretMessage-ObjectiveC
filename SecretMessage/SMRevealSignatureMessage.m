@@ -10,7 +10,7 @@
 #import <Security/Security.h>
 #import <CommonCrypto/CommonCrypto.h>
 
-#define SM_MB_LENGTH_BYTES                      32
+#define SM_MB_LENGTH_BYTES                      kCCKeySizeAES128
 #define SM_TRUNCATED_SIGNATURE_LENGTH_BYTES     40
 
 @interface SMRevealSignatureMessage ()
@@ -75,7 +75,8 @@
     uint8_t mac[CC_SHA256_DIGEST_LENGTH];
     // Calculate the hmac of the first 40 bytes of the signature
     CCHmac(kCCHmacAlgSHA256, self.m2.bytes, self.m2.length,
-           self.encryptedSignature.bytes, SM_TRUNCATED_SIGNATURE_LENGTH_BYTES, mac);
+           self.encryptedSignature.bytes, self.encryptedSignature.length, mac);
+    // Return the first 160 bits of the MAC
     return [NSData dataWithBytes:mac length:SM_TRUNCATED_SIGNATURE_LENGTH_BYTES];
 }
 

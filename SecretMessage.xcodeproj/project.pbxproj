@@ -16,6 +16,20 @@
 		770074C9192D96E200CF2F01 /* libSecretMessage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 770074B1192D96E200CF2F01 /* libSecretMessage.a */; };
 		770074CF192D96E200CF2F01 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 770074CD192D96E200CF2F01 /* InfoPlist.strings */; };
 		770074D1192D96E200CF2F01 /* SecretMessageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 770074D0192D96E200CF2F01 /* SecretMessageTests.m */; };
+		770074E5192DB20E00CF2F01 /* SMPrivateKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 770074E4192DB20E00CF2F01 /* SMPrivateKey.m */; };
+		770074E8192DB21B00CF2F01 /* SMMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 770074E7192DB21B00CF2F01 /* SMMessage.m */; };
+		770074EB192DB2AF00CF2F01 /* SMUserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 770074EA192DB2AF00CF2F01 /* SMUserState.m */; };
+		770074EE192DB2CA00CF2F01 /* SMProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 770074ED192DB2CA00CF2F01 /* SMProtocol.m */; };
+		770074F1192DB2DC00CF2F01 /* SMContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 770074F0192DB2DC00CF2F01 /* SMContext.m */; };
+		770074F4192DB2E400CF2F01 /* SMAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 770074F3192DB2E400CF2F01 /* SMAuth.m */; };
+		770074F7192DB38F00CF2F01 /* SMAuthInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 770074F6192DB38F00CF2F01 /* SMAuthInfo.m */; };
+		770074F9192DBD9C00CF2F01 /* libcommonCrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 770074F8192DBD9C00CF2F01 /* libcommonCrypto.dylib */; };
+		770074FC192DBEF000CF2F01 /* SMDiffieHellman.m in Sources */ = {isa = PBXBuildFile; fileRef = 770074FB192DBEF000CF2F01 /* SMDiffieHellman.m */; };
+		77007500192DC4DF00CF2F01 /* NSString+SubstringHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 770074FF192DC4DF00CF2F01 /* NSString+SubstringHelpers.m */; };
+		77007502192DEC2400CF2F01 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77007501192DEC2400CF2F01 /* CFNetwork.framework */; };
+		77007504192DEC5E00CF2F01 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77007503192DEC5E00CF2F01 /* Security.framework */; };
+		77007507192DEC7C00CF2F01 /* SMSecretMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 77007506192DEC7C00CF2F01 /* SMSecretMessage.m */; };
+		7700750B192DF9BD00CF2F01 /* SMCommitMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7700750A192DF9BD00CF2F01 /* SMCommitMessage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +70,31 @@
 		770074DC192D976200CF2F01 /* libgcrypt-1.5.3 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "libgcrypt-1.5.3"; sourceTree = "<group>"; };
 		770074DD192D977400CF2F01 /* libgpg-error-1.12 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "libgpg-error-1.12"; sourceTree = "<group>"; };
 		770074DE192D977400CF2F01 /* libotr-4.0.0 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "libotr-4.0.0"; sourceTree = "<group>"; };
+		770074E3192DB20E00CF2F01 /* SMPrivateKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPrivateKey.h; sourceTree = "<group>"; };
+		770074E4192DB20E00CF2F01 /* SMPrivateKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPrivateKey.m; sourceTree = "<group>"; };
+		770074E6192DB21B00CF2F01 /* SMMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMMessage.h; sourceTree = "<group>"; };
+		770074E7192DB21B00CF2F01 /* SMMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMMessage.m; sourceTree = "<group>"; };
+		770074E9192DB2AF00CF2F01 /* SMUserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMUserState.h; sourceTree = "<group>"; };
+		770074EA192DB2AF00CF2F01 /* SMUserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMUserState.m; sourceTree = "<group>"; };
+		770074EC192DB2CA00CF2F01 /* SMProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMProtocol.h; sourceTree = "<group>"; };
+		770074ED192DB2CA00CF2F01 /* SMProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMProtocol.m; sourceTree = "<group>"; };
+		770074EF192DB2DC00CF2F01 /* SMContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMContext.h; sourceTree = "<group>"; };
+		770074F0192DB2DC00CF2F01 /* SMContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMContext.m; sourceTree = "<group>"; };
+		770074F2192DB2E400CF2F01 /* SMAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMAuth.h; sourceTree = "<group>"; };
+		770074F3192DB2E400CF2F01 /* SMAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMAuth.m; sourceTree = "<group>"; };
+		770074F5192DB38F00CF2F01 /* SMAuthInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMAuthInfo.h; sourceTree = "<group>"; };
+		770074F6192DB38F00CF2F01 /* SMAuthInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMAuthInfo.m; sourceTree = "<group>"; };
+		770074F8192DBD9C00CF2F01 /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = usr/lib/system/libcommonCrypto.dylib; sourceTree = SDKROOT; };
+		770074FA192DBEF000CF2F01 /* SMDiffieHellman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMDiffieHellman.h; sourceTree = "<group>"; };
+		770074FB192DBEF000CF2F01 /* SMDiffieHellman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMDiffieHellman.m; sourceTree = "<group>"; };
+		770074FE192DC4DF00CF2F01 /* NSString+SubstringHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SubstringHelpers.h"; sourceTree = "<group>"; };
+		770074FF192DC4DF00CF2F01 /* NSString+SubstringHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SubstringHelpers.m"; sourceTree = "<group>"; };
+		77007501192DEC2400CF2F01 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		77007503192DEC5E00CF2F01 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		77007505192DEC7C00CF2F01 /* SMSecretMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSecretMessage.h; sourceTree = "<group>"; };
+		77007506192DEC7C00CF2F01 /* SMSecretMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSecretMessage.m; sourceTree = "<group>"; };
+		77007509192DF9BD00CF2F01 /* SMCommitMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCommitMessage.h; sourceTree = "<group>"; };
+		7700750A192DF9BD00CF2F01 /* SMCommitMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCommitMessage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +102,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77007504192DEC5E00CF2F01 /* Security.framework in Frameworks */,
+				77007502192DEC2400CF2F01 /* CFNetwork.framework in Frameworks */,
+				770074F9192DBD9C00CF2F01 /* libcommonCrypto.dylib in Frameworks */,
 				770074B5192D96E200CF2F01 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,6 +148,9 @@
 		770074B3192D96E200CF2F01 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				77007503192DEC5E00CF2F01 /* Security.framework */,
+				77007501192DEC2400CF2F01 /* CFNetwork.framework */,
+				770074F8192DBD9C00CF2F01 /* libcommonCrypto.dylib */,
 				770074B4192D96E200CF2F01 /* Foundation.framework */,
 				770074C2192D96E200CF2F01 /* XCTest.framework */,
 				770074C5192D96E200CF2F01 /* UIKit.framework */,
@@ -116,6 +161,10 @@
 		770074B6192D96E200CF2F01 /* SecretMessage */ = {
 			isa = PBXGroup;
 			children = (
+				770074FD192DC4CA00CF2F01 /* Categories */,
+				770074E1192DB14B00CF2F01 /* gcrypt */,
+				770074E0192DB14600CF2F01 /* gpg */,
+				770074DF192DB13F00CF2F01 /* otr */,
 				770074B9192D96E200CF2F01 /* SecretMessage.h */,
 				770074BB192D96E200CF2F01 /* SecretMessage.m */,
 				770074B7192D96E200CF2F01 /* Supporting Files */,
@@ -147,6 +196,72 @@
 				770074CD192D96E200CF2F01 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		770074DF192DB13F00CF2F01 /* otr */ = {
+			isa = PBXGroup;
+			children = (
+				77007508192DF9A400CF2F01 /* Messages */,
+				770074E2192DB1D200CF2F01 /* toolkit */,
+				770074E3192DB20E00CF2F01 /* SMPrivateKey.h */,
+				770074E4192DB20E00CF2F01 /* SMPrivateKey.m */,
+				770074E9192DB2AF00CF2F01 /* SMUserState.h */,
+				770074EA192DB2AF00CF2F01 /* SMUserState.m */,
+				770074EC192DB2CA00CF2F01 /* SMProtocol.h */,
+				770074ED192DB2CA00CF2F01 /* SMProtocol.m */,
+				770074EF192DB2DC00CF2F01 /* SMContext.h */,
+				770074F0192DB2DC00CF2F01 /* SMContext.m */,
+				770074F2192DB2E400CF2F01 /* SMAuth.h */,
+				770074F3192DB2E400CF2F01 /* SMAuth.m */,
+				770074F5192DB38F00CF2F01 /* SMAuthInfo.h */,
+				770074F6192DB38F00CF2F01 /* SMAuthInfo.m */,
+				770074FA192DBEF000CF2F01 /* SMDiffieHellman.h */,
+				770074FB192DBEF000CF2F01 /* SMDiffieHellman.m */,
+				77007505192DEC7C00CF2F01 /* SMSecretMessage.h */,
+				77007506192DEC7C00CF2F01 /* SMSecretMessage.m */,
+			);
+			name = otr;
+			sourceTree = "<group>";
+		};
+		770074E0192DB14600CF2F01 /* gpg */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = gpg;
+			sourceTree = "<group>";
+		};
+		770074E1192DB14B00CF2F01 /* gcrypt */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = gcrypt;
+			sourceTree = "<group>";
+		};
+		770074E2192DB1D200CF2F01 /* toolkit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = toolkit;
+			sourceTree = "<group>";
+		};
+		770074FD192DC4CA00CF2F01 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				770074FE192DC4DF00CF2F01 /* NSString+SubstringHelpers.h */,
+				770074FF192DC4DF00CF2F01 /* NSString+SubstringHelpers.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		77007508192DF9A400CF2F01 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				770074E6192DB21B00CF2F01 /* SMMessage.h */,
+				770074E7192DB21B00CF2F01 /* SMMessage.m */,
+				77007509192DF9BD00CF2F01 /* SMCommitMessage.h */,
+				7700750A192DF9BD00CF2F01 /* SMCommitMessage.m */,
+			);
+			name = Messages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,7 +345,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				770074EE192DB2CA00CF2F01 /* SMProtocol.m in Sources */,
+				770074F4192DB2E400CF2F01 /* SMAuth.m in Sources */,
+				7700750B192DF9BD00CF2F01 /* SMCommitMessage.m in Sources */,
+				770074FC192DBEF000CF2F01 /* SMDiffieHellman.m in Sources */,
+				770074F1192DB2DC00CF2F01 /* SMContext.m in Sources */,
+				77007507192DEC7C00CF2F01 /* SMSecretMessage.m in Sources */,
+				770074EB192DB2AF00CF2F01 /* SMUserState.m in Sources */,
 				770074BC192D96E200CF2F01 /* SecretMessage.m in Sources */,
+				770074F7192DB38F00CF2F01 /* SMAuthInfo.m in Sources */,
+				77007500192DC4DF00CF2F01 /* NSString+SubstringHelpers.m in Sources */,
+				770074E5192DB20E00CF2F01 /* SMPrivateKey.m in Sources */,
+				770074E8192DB21B00CF2F01 /* SMMessage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +464,10 @@
 				DSTROOT = /tmp/SecretMessage.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SecretMessage/SecretMessage-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -350,6 +480,10 @@
 				DSTROOT = /tmp/SecretMessage.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SecretMessage/SecretMessage-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

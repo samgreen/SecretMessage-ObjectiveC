@@ -34,6 +34,8 @@ typedef NS_ENUM(int16_t, SMProtocolVersion) {
 + (instancetype)message;
 + (SMMessageType)type;
 
+- (NSData *)createData;
+
 @property (nonatomic, readonly) SMProtocolVersion version;
 
 @property (nonatomic) NSInteger senderInstance;

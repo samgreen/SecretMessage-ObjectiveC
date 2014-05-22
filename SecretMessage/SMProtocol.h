@@ -27,9 +27,9 @@ typedef NS_ENUM(NSUInteger, SMFragmentPolicy) {
 
 @interface SMProtocol : NSObject
 
-+ (NSString *)newQueryMessage:(NSString *)name withPolicy:(SMPolicy)policy;
+//+ (NSString *)newQueryMessage:(NSString *)name withPolicy:(SMPolicy)policy;
 
-+ (NSUInteger)versionForQuery:(NSString *)message withPolicy:(SMPolicy)policy;
+//+ (NSUInteger)versionForQuery:(NSString *)message withPolicy:(SMPolicy)policy;
 
 + (SMMessageType)messageType:(NSString *)message;
 + (NSInteger)messageVersion:(NSString *)version;

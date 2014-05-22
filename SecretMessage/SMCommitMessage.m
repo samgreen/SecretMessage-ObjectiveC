@@ -51,19 +51,20 @@
     // Save the bytes as an NSData
     self.x = [NSData dataWithBytes:xBytes length:SM_X_LENGTH_BYTES];
 
-    // TODO: Serialize gx
+    // TODO: Serialize g^x
     self.gxBigInt = [BigInteger bigintWithRandomNumberOfSize:SM_X_LENGTH_BYTES exact:YES];
-    NSUInteger numBytes = self.gxBigInt.bitCount * 8;
+    self.gxBigInt = [[BigInteger bigintWithInt32:2] exp:2];
     
-    uint8_t gxBytes[numBytes];
-    [self.gxBigInt getBytes:gxBytes length:numBytes];
+    const NSUInteger kNumBytes = self.gxBigInt.bitCount * 8;
+    uint8_t *gxBytes = calloc(kNumBytes, sizeof(uint8_t));
+    [self.gxBigInt getBytes:gxBytes length:kNumBytes];
     
     
     uint8_t encryptedBytes[CC_SHA256_DIGEST_LENGTH];
     size_t dataOutAvailable = 0, dataOutMoved = 0;
     // Encrypt gx (AES128-CTR), should be the same size as gx
     CCCrypt(kCCEncrypt, kCCAlgorithmAES, 0, self.r.bytes, self.r.length, NULL,
-            gxBytes, numBytes, encryptedBytes, dataOutAvailable, &dataOutMoved);
+            gxBytes, kNumBytes, encryptedBytes, dataOutAvailable, &dataOutMoved);
     // Return an NSData pointing to the encrypted bytes
     return [NSData dataWithBytes:encryptedBytes length:dataOutMoved];
     
@@ -128,11 +129,15 @@
  This is the SHA256 hash of gxmpi.
  */
 - (NSData *)hashedData {
+    size_t kNumBytes = self.gxBigInt.bitCount * 8;
+    uint8_t *gxBytes = calloc(kNumBytes, sizeof(uint8_t));
+    [self.gxBigInt getBytes:gxBytes length:kNumBytes];
+    
     // Create store for the SHA256
     uint8_t digest[CC_SHA256_DIGEST_LENGTH];
     
     // Hash the gx value
-    CC_SHA256(self.gx.bytes, (CC_LONG)self.gx.length, digest);
+    CC_SHA256(gxBytes, kNumBytes, digest);
     
     // Return an NSData pointing to the bytes
     return [NSData dataWithBytes:digest length:CC_SHA256_DIGEST_LENGTH];
